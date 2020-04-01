@@ -33,7 +33,7 @@ html {
   width: 100%;
   background-color: rgba(250, 237, 0, 0.9);
   z-index: 1;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
 }
 .nav-bar .toggle-button {
   width: 3rem;
@@ -127,9 +127,6 @@ html {
 #projects {
   background-color: #171717;
   padding: 2rem 2rem;
-}
-#projects .project {
-  margin-left: 2rem;
 }
 #projects .project .project__container {
   display: block;
@@ -260,6 +257,7 @@ html {
     align-items: center;
     justify-content: space-around;
     margin-bottom: 3rem;
+    margin-left: 2rem;
   }
   #projects .project .project__container {
     width: 30rem;
