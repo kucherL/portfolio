@@ -10,6 +10,10 @@ html {
   color: #ABABAB;
 }
 
+body {
+  background-color: #faed00;
+}
+
 .header {
   width: 100%;
   height: 100vh;
@@ -31,7 +35,7 @@ html {
 
 .nav-bar {
   width: 100%;
-  background-color: rgba(250, 237, 0, 0.9);
+  background-color: rgb(250, 237, 0, 0.9);
   z-index: 1;
   padding: 1rem 1rem;
 }
@@ -237,6 +241,10 @@ html {
 
   #about .about__container {
     flex-direction: row;
+  }
+
+  #about .about__container .about__text-section {
+    width: 50%;
   }
 
   #technologies .technologies__list {
