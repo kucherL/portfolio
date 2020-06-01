@@ -18,7 +18,8 @@
   <body>
     <header class="header">
       <div class="header__background-image"></div>
-      <h1>Hello!</h1>
+      <h1 class="translation">Elizaveta Kucherova</h1>
+      <h2>Frontend Developer</h2>
     </header>
     <nav class="nav-bar">
       <button class="toggle-button">
@@ -29,29 +30,33 @@
       <ul class="nav-bar__items">
         <li class="nav-bar__item">
           <a href="#about">
-            <p>Обо мне</p>
+            <p class="translation">About me</p>
           </a>
         </li>
         <li class="nav-bar__item">
           <a href="#technologies">
-            <p>Стек технологий</p>
+            <p class="translation">Technologies</p>
           </a>
         </li>
         <li class="nav-bar__item">
           <a href="#projects">
-            <p>Проекты</p>
+            <p class="translation">Projects</p>
           </a>
         </li>
         <li class="nav-bar__item">
           <a href="#contacts">
-            <p>Контакты</p>
+            <p class="translation">Contacts</p>
           </a>
+        </li>
+        <li class="nav-bar__item-button">
+          <button id="change-language" class="translation">Изменить язык</button>
         </li>
       </ul>
     </nav>
-    <main>
+    <!-- <main> -->
       <section id="about">
-        <h2 class="section-title">Обо мне</h2>
+        <h2 class="section-title translation">About me</h2>
+        <!-- <h2 class="section-title">Обо мне</h2> -->
         <div class="about__container">
           <div class="photo-border">
             <img
@@ -61,26 +66,29 @@
             />
           </div>
           <article class="about__text-section">
-            <p>Привет, я Елизавета Кучерова, frontend разработчик из Москвы.<br><br>
-                Мне всегда были интересны технологии, и я пыталась найти работу, косвенно связанную с ними. Например, ранее я работала в тех. поддержке телеком компании Дом.ру.<br><br>
-                Обучаться веб-разработке я начала в 2018 году. Несколько месяцев учила PHP и JS, пока не остановилась на последнем. Меня больше привлекает фронтенд направление, так как мне нравится работать с визуальной частью и сразу наблюдать результат. Выбор языка JavaScript обусловили: большое комьюнити, кроссплатформенность, широкий спектр различных применений (подходит и для фронтенда, и для бекэнда, и для мобильной разработки, и для десктопных приложений, и для игр).<br><br>
-                Обучалась самостоятельно, по следующим ресурсам:<br><br>
-                <ul>
-                  <li><p>MDN</p></li>
-                  <li><p>GeekBrains</p></li>
-                  <li><p>FreeCodeCamp</p></li>
-                  <li><p>CodeWars</p></li>
-                  <li><p>Udemy</p></li>
-                  <li><p>учебник Кантора</p></li>
-                  <li><p>You don't know JS</p></li>
-                </ul><br>
-                За время обучения я научилась читать документацию и самостоятельно разбираться с проблемами. В дальнейшем планирую изучить React Native, и заняться созданием мобильных приложений, а также освоить бэкенд.<br><br>
-                В свободное время занимаюсь спортом или играю в видеоигры.</p>
+            <p>
+              <span class="translation">Hi, I'm a self-taught frontend developer from Moscow. Interest in
+                technology, the desire to create and the need to make a website in
+                the past, led me to the world of web development. My path into web
+                began in 2018, when I decided to start studying at Mail.ru
+                courses, </span>
+              <a target="_blank" rel="noopener noreferrer" href="https://geekbrains.ru/">GeekBrains</a>. 
+              <span class="translation">Soon after that, I started to work alone at some of my projects.</span><br /><br />
+              <span class="translation">I have solid knowledge about responsive web design and client-side
+                scripting, like vanilla js. Also, I like to work with React.</span><br /><br />
+              <span class="translation">In the nearest future I plan to study Node.js, for building
+                backend, and continue to learn new stuff at JavaScript and CSS.</span><br /><br />
+              <span class="translation">In my free time you can find me practice at coding (I can work on
+                some of my pet-projects or take challenge at </span>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.codewars.com/">Codewars</a>
+              <span class="translation">), or do sport, or play video games.</span>
+            </p>
           </article>
         </div>
       </section>
       <section id="technologies">
-        <h2 class="section-title">Стек технологий</h2>
+        <h2 class="section-title translation">Technologies</h2>
+        <!-- <h2 class="section-title">Стек технологий</h2> -->
         <ul class="technologies__list">
           <li class="technologies__item">
             <img
@@ -119,26 +127,34 @@
         </ul>
       </section>
       <section id="projects">
-        <h2 class="section-title">Проекты</h2>
+        <h2 class="section-title translation">Projects</h2>
         <div class="project">
-          <a class="project__container" href="https://kucherl.github.io/rest-landing/">
+          <a
+          target="_blank" rel="noopener noreferrer"
+            class="project__container"
+            href="https://kucherl.github.io/rest-landing/"
+          >
             <img
               class="project__screenshot"
               src="./assets/rest-landing.jpg"
               alt="project__screenshot"
             />
             <div class="project__about">
-              <h3 class="project__title">Лэндинг ресторана</h3>
-              <p class="project__description">Полностью адаптивный лэндинг ресторана, подходит для мобильных устройств. Скрипты написаны на vanilla JS. Для стилей использован препроцессор Sass.</p>
+              <h3 class="project__title">Restaurant</h3>
+              <p class="project__description">
+                <span class="translation">It's a fully responsive web application made for educational
+                  purpouses. The primary technologies involved in this project include
+                  HTML5, CSS3, Sass and vanilla js.</span>
+              </p>
             </div>
           </a>
           <div class="project__links">
-            <a href="https://github.com/kucherL/rest-landing"
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/kucherL/rest-landing"
               ><img
                 src="./assets/icons/github-seeklogo.com.svg"
                 alt="github__logo"
             /></a>
-            <a href="https://kucherl.github.io/rest-landing/"
+            <a target="_blank" rel="noopener noreferrer" href="https://kucherl.github.io/rest-landing/"
               ><img
                 src="./assets/icons/iconfinder_Streamline-17_185037.svg"
                 alt="open-project__logo"
@@ -146,7 +162,11 @@
           </div>
         </div>
         <div class="project">
-          <a class="project__container" href="https://todo-list-c5bb2.firebaseapp.com/">
+          <a
+          target="_blank" rel="noopener noreferrer"
+            class="project__container"
+            href="https://todo-list-c5bb2.firebaseapp.com/"
+          >
             <img
               class="project__screenshot"
               src="./assets/toDoList.jpg"
@@ -154,74 +174,116 @@
             />
             <div class="project__about">
               <h3 class="project__title">ToDo List</h3>
-              <p class="project__description">После регистрации сайт позволяет составить свой список задач. Приложение написано на Реакте, а авторизация, добавление и удаление задач реализованы с помощью Firebase.</p>
+              <p class="project__description translation">
+                ToDo List is a web application similar to any todo list. Users
+                can create tasks, delete them, and mark completed. Also, users
+                can check comlited tasks. The app was created using React.
+                Authorisation and storage data was made with Firebase. In app
+                was also used Sass and React Router library.
+              </p>
             </div>
           </a>
           <div class="project__links">
-            <a href="https://github.com/kucherL/toDoList"
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/kucherL/toDoList"
               ><img
                 src="./assets/icons/github-seeklogo.com.svg"
                 alt="github__logo"
             /></a>
-            <a href="https://todo-list-c5bb2.firebaseapp.com/"
+            <a target="_blank" rel="noopener noreferrer" href="https://todo-list-c5bb2.firebaseapp.com/"
               ><img
                 src="./assets/icons/iconfinder_Streamline-17_185037.svg"
                 alt="open-project__logo"
             /></a>
           </div>
         </div>
-        <!-- <div class="project">
-          <a class="project__container" href="/">
+        <div class="project">
+          <a
+          target="_blank" rel="noopener noreferrer"
+            class="project__container"
+            href="https://game-search-31075.firebaseapp.com/"
+          >
             <img
               class="project__screenshot"
-              src="./assets/background__markus-spiske-unsplash.jpg"
+              src="./assets/gameSearch.png"
               alt="project__screenshot"
             />
             <div class="project__about">
-              <h3 class="project__title">Project Title</h3>
-              <p class="project__description">Project Description</p>
+              <h3 class="project__title">GameSearch</h3>
+              <p class="project__description">
+                <span class="translation">GameSearch is a web application, made for searching and saving
+                  different games. Users can filter games by genres, platforms,
+                  rating or popularity. Or just filter by title. On the top of
+                  main page randomly loading some game, with high rating and
+                  popularity. On the bottom - a list of games, with high
+                  popularity (In future I plan to write an algorithm, which would
+                  recommend users games, according to their taste). User can click
+                  on any game, and get a lot of information about it. When user
+                  signs up, new functions are opened for him, such as - rating
+                  games from 1 to 5, and adding them to folders. Folders can also
+                  be created independently. On the profile page, user can also
+                  change the photo and login.</span><br /><br />
+                <span class="translation">This application made with IGDB API. Also, I was faced with the
+                  need to add proxy on Heroku, for cors-policy. This leads to long
+                  page loads and restriction on requests. So, I'm sorry for
+                  inconveniences. For now I still working on these problems.</span><br /><br />
+                <span class="translation">To build this app I used React, Redux, and Firebase.</span>
+              </p>
             </div>
           </a>
           <div class="project__links">
-            <a href="/"
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/kucherL/gameSearch"
               ><img
                 src="./assets/icons/github-seeklogo.com.svg"
                 alt="github__logo"
             /></a>
-            <a href="/"
+            <a target="_blank" rel="noopener noreferrer" href="https://game-search-31075.firebaseapp.com/"
               ><img
                 src="./assets/icons/iconfinder_Streamline-17_185037.svg"
                 alt="open-project__logo"
             /></a>
           </div>
-        </div> -->
+        </div>
       </section>
       <section id="contacts">
-        <h2 class="section-title">Контакты</h2>
+        <h2 class="section-title translation">Contacts</h2>
         <ul class="contacts__links">
           <li class="contact__link">
-            <a href=""
+            <a target="_blank" rel="noopener noreferrer" href="/"
               ><img src="./assets/icons/Linkedin.svg" alt="linkedin-logo"
             /></a>
           </li>
           <li class="contact__link">
-            <a href="https://github.com/kucherL"
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/kucherL"
               ><img
                 src="./assets/icons/github-seeklogo.com.svg"
                 alt="github-logo"
             /></a>
           </li>
           <li class="contact__link">
-            <a href=""
+            <a target="_blank" rel="noopener noreferrer" href="https://t.me/kucherL"
               ><img
-                src="./assets/icons/google-gmail-seeklogo.com.svg"
+                src="./assets/icons/telegram.svg"
+                alt="gmail-logo"
+            /></a>
+          </li>
+          <li class="contact__link">
+            <a href="tel:+7-985-016-19-05"
+              ><img
+                src="./assets/icons/phone-square.svg"
+                alt="gmail-logo"
+            /></a>
+          </li>
+          <li class="contact__link">
+            <a href="mailto:lizakucherova25@gmail.com"
+              ><img
+                src="./assets/icons/envelope-square.svg"
                 alt="gmail-logo"
             /></a>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="footer"><p>Copyright</p></footer>
+    <footer class="footer"><p>2020 | <span class="translation">Elizaveta Kucherova</span></p></footer>
     <script src="./shared.js"></script>
   </body>
 </html>

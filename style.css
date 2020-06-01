@@ -7,11 +7,7 @@
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
-  color: #ABABAB;
-}
-
-body {
-  background-color: #faed00;
+  color: #ababab;
 }
 
 .header {
@@ -24,7 +20,7 @@ body {
   width: 100%;
   height: 100vh;
   background-color: rgba(23, 23, 23, 0.9);
-  clip-path: polygon(0 100%, 0 0, 100% 80%, 100% 100%);
+  clip-path: polygon(0 100%, 0 0, 100% 54%, 100% 100%);
   z-index: 1;
 }
 .header h1 {
@@ -32,12 +28,16 @@ body {
   top: 50%;
   left: 20%;
 }
+.header h2 {
+  position: absolute;
+  top: 60%;
+  left: 20%;
+}
 
 .nav-bar {
   width: 100%;
-  background-color: rgb(250, 237, 0, 0.9);
+  background-color: #faed00;
   z-index: 1;
-  padding: 1rem 1rem;
 }
 .nav-bar .toggle-button {
   width: 3rem;
@@ -49,6 +49,7 @@ body {
   vertical-align: middle;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   outline: none;
+  margin-left: 1rem;
 }
 .nav-bar .toggle-button .toggle-button__bar {
   width: 100%;
@@ -65,7 +66,7 @@ body {
   list-style: none;
 }
 .nav-bar .nav-bar__items .nav-bar__item {
-  padding: 0.3rem 0;
+  padding: 0.5rem 0;
 }
 .nav-bar .nav-bar__items .nav-bar__item a {
   text-decoration: none;
@@ -74,6 +75,22 @@ body {
 .nav-bar .nav-bar__items .nav-bar__item a p {
   font-family: inherit;
   color: #171717;
+}
+.nav-bar .nav-bar__items .nav-bar__item-button {
+  padding: 0.5rem 0.3rem;
+  background-color: #353535;
+}
+.nav-bar .nav-bar__items .nav-bar__item-button button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #ababab;
+}
+.nav-bar .nav-bar__items .nav-bar__item-button:hover button {
+  color: #faed00;
 }
 
 .section-title {
@@ -85,7 +102,11 @@ body {
 
 #about {
   background-color: #353535;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
+}
+#about a {
+  text-decoration: none;
+  color: #faed00;
 }
 #about .about__container {
   display: flex;
@@ -110,7 +131,7 @@ body {
 
 #technologies {
   background-color: #171717;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
 }
 #technologies .technologies__list {
   list-style: none;
@@ -121,7 +142,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1.5rem 1.5rem;
+  margin: 1rem;
 }
 #technologies .technologies__list .technologies__item img {
   height: 2rem;
@@ -130,7 +151,7 @@ body {
 
 #projects {
   background-color: #171717;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
 }
 #projects .project .project__container {
   display: block;
@@ -138,7 +159,6 @@ body {
   padding: 0.5rem 0.5rem;
   text-decoration: none;
   color: inherit;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 #projects .project .project__container .project__screenshot {
   width: 100%;
@@ -158,7 +178,6 @@ body {
 #projects .project .project__links a {
   text-decoration: none;
   cursor: pointer;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 #projects .project .project__links a img {
   height: 3rem;
@@ -167,11 +186,10 @@ body {
 
 #contacts {
   background-color: #171717;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
 }
 #contacts .contacts__links {
   list-style: none;
-  margin: 1rem auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -186,12 +204,12 @@ body {
 }
 #contacts .contacts__links .contact__link a img {
   height: 3rem;
-  width: auto;
+  width: 3rem;
 }
 
 .footer {
   background-color: #faed00;
-  padding: 2rem 2rem;
+  padding: 0.5rem;
 }
 .footer p {
   text-align: center;
@@ -242,9 +260,8 @@ body {
   #about .about__container {
     flex-direction: row;
   }
-
-  #about .about__container .about__text-section {
-    width: 50%;
+  #about .about__text-section {
+    max-width: 50%;
   }
 
   #technologies .technologies__list {
@@ -281,13 +298,16 @@ body {
     transition: 0.5s;
   }
   #projects .project .project__links {
-    height: 20rem;
+    height: 10rem;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
 }
 @media (min-width: 60rem) {
+  #projects .project {
+    margin-bottom: 2rem;
+  }
   #projects .project .project__container {
     display: flex;
     flex-direction: row;
@@ -295,8 +315,13 @@ body {
   }
   #projects .project .project__container .project__screenshot {
     width: 60%;
+    height: 100%;
     margin-bottom: 0;
     margin-right: 1rem;
+    align-self: center;
+  }
+  #projects .project .project__links {
+    margin: 0 auto;
   }
 }
 
