@@ -13,7 +13,9 @@ html {
 .header {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to top, rgba(250, 237, 0, 0.3) 100%, transparent), url("./assets/background__markus-spiske-unsplash.jpg") bottom/cover no-repeat border-box;
+  background: linear-gradient(to top, rgba(250, 237, 0, 0.3) 100%, transparent),
+    url("./assets/background__markus-spiske-unsplash.jpg") bottom/cover
+      no-repeat border-box;
   position: relative;
 }
 .header .header__background-image {
@@ -175,15 +177,19 @@ html {
 #certificates .certificates__gallery--item figcaption {
   background-color: #000000d7;
   color: #ababab;
-  height: 10rem;
+  height: 11rem;
   padding-top: 2rem;
   position: relative;
 }
-#certificates .certificates__gallery--item:hover > figure > a > figcaption {
+#certificates .certificates__gallery--item:hover > a > figure > figcaption {
   transform: translateY(-145px);
   transition: 300ms;
 }
-#certificates .certificates__gallery--item:not(:hover) > figure > a > figcaption {
+#certificates
+  .certificates__gallery--item:not(:hover)
+  > a
+  > figure
+  > figcaption {
   transform: translateY(0px);
   transition: 300ms;
 }
