@@ -47,7 +47,6 @@ html {
   padding-bottom: 0;
   padding-top: 0;
   vertical-align: middle;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   outline: none;
   margin-left: 1rem;
 }
@@ -70,7 +69,6 @@ html {
 }
 .nav-bar .nav-bar__items .nav-bar__item a {
   text-decoration: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .nav-bar .nav-bar__items .nav-bar__item a p {
   font-family: inherit;
@@ -147,6 +145,47 @@ html {
 #technologies .technologies__list .technologies__item img {
   height: 2rem;
   width: auto;
+}
+
+#certificates {
+  background-color: #171717;
+  padding: 1rem 1rem;
+}
+#certificates .certificates__gallery {
+  margin: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 12rem);
+  grid-gap: 1rem;
+  justify-content: center;
+}
+#certificates .certificates__gallery--item {
+  height: 10rem;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+#certificates .certificates__gallery--item img {
+  height: 100%;
+  width: 12rem;
+}
+#certificates .certificates__gallery--item a {
+  text-decoration: none;
+}
+#certificates .certificates__gallery--item figcaption {
+  background-color: #000000d7;
+  color: #ababab;
+  height: 10rem;
+  padding-top: 2rem;
+  position: relative;
+}
+#certificates .certificates__gallery--item:hover > figure > a > figcaption {
+  transform: translateY(-145px);
+  transition: 300ms;
+}
+#certificates .certificates__gallery--item:not(:hover) > figure > a > figcaption {
+  transform: translateY(0px);
+  transition: 300ms;
 }
 
 #projects {
@@ -234,7 +273,7 @@ html {
 }
 @keyframes dropdown {
   from {
-    height: 5.3rem;
+    height: 3rem;
   }
   to {
     height: 12rem;
@@ -245,7 +284,7 @@ html {
     height: 12rem;
   }
   to {
-    height: 5.3rem;
+    height: 3rem;
   }
 }
 @media (min-width: 45rem) {

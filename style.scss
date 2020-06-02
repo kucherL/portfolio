@@ -54,7 +54,6 @@ html {
     padding-bottom: 0;
     padding-top: 0;
     vertical-align: middle;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     outline: none;
     margin-left: 1rem;
 
@@ -79,7 +78,6 @@ html {
 
       a {
         text-decoration: none;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
         p {
           font-family: inherit;
@@ -170,6 +168,54 @@ html {
         height: 2rem;
         width: auto;
       }
+    }
+  }
+}
+
+#certificates {
+  background-color: $background-color;
+  padding: $top-bottom-padding $left-right-padding;
+
+  .certificates__gallery {
+    margin: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 12rem);
+    grid-gap: 1rem;
+    justify-content: center;
+
+    &--item {
+      height: 10rem;
+      list-style: none;
+      text-align: center;
+      cursor: pointer;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        width: 12rem;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      figcaption {
+        background-color: #000000d7;
+        color: $text-color;
+        height: 10rem;
+        padding-top: 2rem;
+        position: relative;
+      }
+    }
+
+    &--item:hover > figure > a > figcaption {
+      transform: translateY(-145px);
+      transition: 300ms;
+    }
+
+    &--item:not(:hover) > figure > a > figcaption {
+      transform: translateY(0px);
+      transition: 300ms;
     }
   }
 }
@@ -277,7 +323,7 @@ html {
 
 @keyframes dropdown {
   from {
-    height: 5.3rem;
+    height: 3rem;
   }
 
   to {
@@ -291,7 +337,7 @@ html {
   }
 
   to {
-    height: 5.3rem;
+    height: 3rem;
   }
 }
 

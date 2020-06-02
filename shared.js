@@ -11,6 +11,7 @@ const translation = {
     "Елизавета Кучерова",
     "Обо мне",
     "Стек технологий",
+    "Сертификаты",
     "Проекты",
     "Контакты",
     "Change language",
@@ -29,6 +30,18 @@ const translation = {
     решая задачи на `,
     `), либо же я занимаюсь спортом или играю в видеоигры.`,
     "Стек технологий",
+    "Сертификаты",
+    `Сертификат о прохождении курса FreeCodeCamp. Адаптивная верстка.`,
+    `Сертификат о прохождении курса FreeCodeCamp. Алгоритмы и структуры даных JavaScript.`,
+    `Сертификат о прохождении курса GeekBrains. HTML&CSS.`,
+    `Сертификат о прохождении курса GeekBrains. Алгоритмы и структуры данных на PHP.`,
+    `Сертификат о прохождении курса GeekBrains. Базовый курс JavaScript.`,
+    `Сертификат о прохождении курса GeekBrains. Введение в Git.`,
+    `Сертификат о прохождении курса GeekBrains. Командая разработка.`,
+    `Сертификат о прохождении курса GeekBrains. Компьютерые сети.`,
+    `Сертификат о прохождении курса GeekBrains. Профессиональная верстка.`,
+    `Сертификат о прохождении тестирования GeekBrains. HTML&CSS. Сложный уровень.`,
+    `Сертификат о прохождении тестирования GeekBrains. JavaScript. Начальный уровень.`,
     "Проекты",
     `Полностью адаптивный лэндинг ресторана, созданный в образовательных целях. Основные технологии, использованные при создании проекта, включают HTML5, CSS3, Sass и vanilla js.`,
     `ToDo List, как и любое приложение подобного типа, позволяет
@@ -68,6 +81,7 @@ const translation = {
     "Elizaveta Kucherova",
     "About me",
     "Technologies",
+    "Certificates",
     "Projects",
     "Contacts",
     "Изменить язык",
@@ -86,6 +100,20 @@ const translation = {
     some of my pet-projects or take challenge at`,
     `), or do sport, or play video games.`,
     "Technologies",
+    "Certificates",
+    "FreeCodeCamp сourse сertificate. Responsive web design.",
+    `FreeCodeCamp сourse сertificate. JavaScript algorithms and data
+    structures.`,
+    `GeekBrains сourse сertificate. HTML&CSS.`,
+    `GeekBrains сourse сertificate. PHP algorithms and data
+    structures.`,
+    `GeekBrains сourse сertificate. Basic JavaScript.`,
+    `GeekBrains сourse сertificate. Introduction to Git.`,
+    `GeekBrains сourse сertificate. Team development.`,
+    `GeekBrains сourse сertificate. Computer networks.`,
+    `GeekBrains сourse сertificate. Professional layout.`,
+    `GeekBrains test сertificate. HTML&CSS. Hard level.`,
+    `GeekBrains test сertificate. JavaScript basic.`,
     "Projects",
     `It's a fully responsive web application made for educational
     purpouses. The primary technologies involved in this project include
@@ -121,19 +149,15 @@ toggleButton.addEventListener("click", () => {
   if (dropdownList.classList.contains("open")) {
     dropdownList.style.animation =
       "disappearance 0.2s cubic-bezier(0.2, 0.48, 0.76, 0.29)";
-    setTimeout(() => {
-      navBar.style.animation = "dropup 0.2s ease-out";
-      dropdownList.removeAttribute("style", "display:flex");
-      dropdownList.classList.remove("open");
-    }, 100);
+    navBar.style.animation = "dropup 0.2s ease-out";
+    dropdownList.removeAttribute("style", "display:flex");
+    dropdownList.classList.remove("open");
   } else {
     navBar.style.animation = "dropdown 0.2s ease-out";
-    setTimeout(() => {
-      dropdownList.setAttribute("style", "display:flex");
-      dropdownList.style.animation =
-        "appearance 0.2s cubic-bezier(0.2, 0.48, 0.76, 0.29)";
-      dropdownList.classList.add("open");
-    }, 100);
+    dropdownList.setAttribute("style", "display:flex");
+    dropdownList.style.animation =
+      "appearance 0.2s cubic-bezier(0.2, 0.48, 0.76, 0.29)";
+    dropdownList.classList.add("open");
   }
 });
 
