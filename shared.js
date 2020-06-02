@@ -17,22 +17,21 @@ const translation = {
     "Change language",
     "Обо мне",
     `Добрый день, я фронтенд разработчик из Москвы. Интерес к технологиям, желание творить, и возникшая в прошлом потребность
-    создать сайт, привели меня в мир веб-разработки. Мой путь к программированию стартовал в 2018 году, когда я решила
-    начать обучение на курсах Mail.ru, `,
-    `Вскоре, я начала самостоятельно работать над 
-    несколькими проектами.`,
-    `Я хорошо разбираюсь в адаптивной верстке, и пишу понятный JavaScript код, используя стандарт ES6.
-    Также, касательно фреймворков, мне нравиться работать с React.`,
-    `В ближайшем будущем я планирую изучить Node.js, для работы с
-    бэкэндом, и продолжать изучение JavaScript и CSS.`,
-    `В свободное время я, в основном, практикуюсь в
-    написании кода (либо работая над каким-то из своих проектов, либо
-    решая задачи на `,
+    создать сайт, привели меня в мир веб-разработки. Мой путь к программированию стартовал в 2018 году, с началом обучения в 
+    университете Mail.ru, `,
+    `Вскоре после этого началась самостоятельная работа над 
+    проектами.`,
+    `Я создаю сайты с применением техник адаптивной верстки, и понятным JavaScript кодом, написанным с использованием
+    стандарта ES6. Среди фреймворков неплохо разбираюсь в React.`,
+    `В ближайшем будущем я планирую глубже изучить Node.js для работы с
+    бэкэндом.`,
+    `В свободное время, в основном, практикуюсь в
+    написании кода (работая над каким-то из своих проектов или решая задачи на `,
     `), либо же я занимаюсь спортом или играю в видеоигры.`,
     "Стек технологий",
     "Сертификаты",
     `Сертификат о прохождении курса FreeCodeCamp. Адаптивная верстка.`,
-    `Сертификат о прохождении курса FreeCodeCamp. Алгоритмы и структуры даных JavaScript.`,
+    `Сертификат о прохождении курса FreeCodeCamp. Алгоритмы и структуры данных JavaScript.`,
     `Сертификат о прохождении курса GeekBrains. HTML&CSS.`,
     `Сертификат о прохождении курса GeekBrains. Алгоритмы и структуры данных на PHP.`,
     `Сертификат о прохождении курса GeekBrains. Базовый курс JavaScript.`,
@@ -43,37 +42,33 @@ const translation = {
     `Сертификат о прохождении тестирования GeekBrains. HTML&CSS. Сложный уровень.`,
     `Сертификат о прохождении тестирования GeekBrains. JavaScript. Начальный уровень.`,
     "Проекты",
-    `Полностью адаптивный лэндинг ресторана, созданный в образовательных целях. Основные технологии, использованные при создании проекта, включают HTML5, CSS3, Sass и vanilla js.`,
+    `Полностью адаптивный лэндинг ресторана, созданный в образовательных целях. 
+    Основные технологии, использованные при создании проекта, включают HTML5, CSS3, Sass и vanilla js.`,
     `ToDo List, как и любое приложение подобного типа, позволяет
-    пользователям создавать задачи, удалять их, и отмечать
-    выполненные. Также, пользователи могут проверить свои
-    выполненные задачи. Приложение создано на базе React.
-    Авторизация и хранение данных осуществляются с помощью Firebase.
-    Также, при создании использовалить Sass, и библиотека React
+    пользователям создавать задачи, удалять их, отмечать
+    выполненные. Последние сохраняются при отметке и далее их можно проверить в соответствующей вкладке. 
+    Приложение создано на базе React, авторизация и хранение данных осуществляются с помощью Firebase.
+    Также, при создании использовались Sass и библиотека React
     Router.`,
-    `GameSearch - это приложение, созданное для поиска и сохранения
-    различных игр. Пользователи могут воспользоваться поиском, и
+    `GameSearch - это приложение, созданное для поиска игр. 
+    Пользователи могут перейти на соответствующую вкладку, и
     фильтровать игры по жанрам, платформам, рейтингу или
-    популярности. Или же просто искать по названию. Наверху главной
-    страницы в рандомном порядке загружается какая-либо игра с
-    высоким рейтингом и популярностью. Ниже расположен список игр с
-    высокой популярностью (в будущем я планирую написать алгоритм,
-    который отображал бы игры, подходящие к интересам пользователя).
-    Пользователь может кликнуть на любую игру, и получить множество
-    информации по ней. Когда же пользователь регистрируется на
-    сайте, у него открывается доступ к новым функциям, таким как
-    возможность проставить каждой игре рейтинг, от 1 до 5, и
-    сохранить игру в папку. Папки также может создавать сам
-    пользователь. На странице профиля имеется возможность изменить
+    популярности, или же просто искать по названию. Наверху главной
+    страницы из 100 наиболее популярных игр загружается информация по одной, случайно выбранной. 
+    Ниже расположен список игр с
+    высоким рейтингом (в будущем я планирую написать алгоритм,
+    который отображал бы игры, подходящие по интересам пользователя).
+    При клике на игру осуществляется переход на страницу, содержащую подробную информацию о ней.
+    При регистрации на сайте, пользователю открывается доступ к новым функциям, таким как
+    возможность проставить каждой игре рейтинг и
+    сохранить игру в папку, которые также может создавать сам
+    пользователь. А на странице профиля имеется возможность изменить
     фото и логин.`,
-    `Данное приложение создано с IGDB API. Также, в процессе я
-    столкнулась с необходимостью подключить прокси на Heroku, для
-    обхода cors-policy. С этим могут быть связаны долгое время
-    загрузки приложения и ограниченное количество запросов. Прошу
-    прощения за доставленные неудобства. Сейчас я работаю над этими
-    проблемами.`,
-    `При создании приложения использовались React, Redux, и
-    Firebase.`,
+    `Данное приложение создано с помощью IGDB API. В процессе я
+    столкнулась с необходимостью подключить cors-прокси на Heroku для
+    обхода cors-policy. С этим может быть связано долгое время
+    загрузки приложения, прошу прощения за доставленные неудобства.`,
+    `При создании использовались React, Redux, и Firebase.`,
     "Контакты",
     "Елизавета Кучерова",
   ],
@@ -86,18 +81,14 @@ const translation = {
     "Contacts",
     "Изменить язык",
     "About me",
-    `Hi, I'm a self-taught frontend developer from Moscow. Interest in
-    technology, the desire to create and the need to make a website in
-    the past, led me to the world of web development. My path into web
-    began in 2018, when I decided to start studying at Mail.ru
-    courses, `,
-    `Soon after that, I started to work alone at some of my projects.`,
-    `I have solid knowledge about responsive web design and client-side
-    scripting, like vanilla js. Also, I like to work with React.`,
-    `In the nearest future I plan to study Node.js, for building
-    backend, and continue to learn new stuff at JavaScript and CSS.`,
-    `In my free time you can find me practice at coding (I can work on
-    some of my pet-projects or take challenge at`,
+    `Hi, I'm a self-taught front-end developer from Moscow. Interest in technology, the desire 
+    to create and the need to make a website in the past led me to the world of web programming. 
+    The path into the web began in 2018 when I decided to start studying at Mail.ru university, `,
+    `Soon after that, I began to work at some of my projects.`,
+    `I create websites using adaptive web-design techniques and clean JavaScript code, written with ES6 standard. 
+    Also, I like to work with React.`,
+    `In the nearest future, I plan to study deeper Node.js, for building back-end.`,
+    `In my free time, you can find me practice at coding (I can work on some of my pet-projects or take the challenge at `,
     `), or do sport, or play video games.`,
     "Technologies",
     "Certificates",
@@ -115,35 +106,27 @@ const translation = {
     `GeekBrains test сertificate. HTML&CSS. Hard level.`,
     `GeekBrains test сertificate. JavaScript basic.`,
     "Projects",
-    `It's a fully responsive web application made for educational
-    purpouses. The primary technologies involved in this project include
-    HTML5, CSS3, Sass and vanilla js.`,
-    `ToDo List is a web application similar to any todo list. Users
-    can create tasks, delete them, and mark completed. Also, users
-    can check comlited tasks. The app was created using React.
-    Authorisation and storage data was made with Firebase. In app
-    was also used Sass and React Router library.`,
-    `GameSearch is a web application, made for searching and saving
-    different games. Users can filter games by genres, platforms,
-    rating or popularity. Or just filter by title. On the top of
-    main page randomly loading some game, with high rating and
-    popularity. On the bottom - a list of games, with high
-    popularity (In future I plan to write an algorithm, which would
-    recommend users games, according to their taste). User can click
-    on any game, and get a lot of information about it. When user
-    signs up, new functions are opened for him, such as - rating
-    games from 1 to 5, and adding them to folders. Folders can also
-    be created independently. On the profile page, user can also
-    change the photo and login.`,
-    `This application made with IGDB API. Also, I was faced with the
-    need to add proxy on Heroku, for cors-policy. This leads to long
-    page loads and restriction on requests. So, I'm sorry for
-    inconveniences. For now I still working on these problems.`,
-    `To build this app I used React, Redux, and Firebase.`,
+    `It's a fully responsive web application made for educational purposes. The primary technologies involved in this project include HTML5, CSS3, Sass, and vanilla js.`,
+    `ToDo List is a web application similar to any todo list. Users can create tasks, delete them, and mark completed. Also, users can check the completed tasks. The app was created using React.
+    Authorization and storage data was made with Firebase. For making the application was also used Sass and React Router library.`,
+    `GameSearch is a web application, made for searching for different games. Users can filter games by genres, 
+    platforms, rating, or popularity, or just filter by title. On top of the main
+      page, of the 100 most popular games are loaded with information on one randomly selected. 
+    On the bottom - a list of games, with high rating (In future I plan to write 
+      an algorithm, which would recommend users games, according to their taste). 
+      When users click on a game, they go to a page containing detailed information about it. When users signs up, new functions are opening for him, such as - 
+      rating games and adding them to folders, which can also be created independently. On the profile page, the 
+      user can also change the photo and name.`,
+    `This application made with IGDB API. Also, I was faced with the need to add cors-proxy on Heroku, for cors-policy. This leads to long page loads, I'm sorry for the inconveniences.`,
+    `React, Redux, and Firebase used for building this app.`,
     "Contacts",
     "Elizaveta Kucherova",
   ],
 };
+
+for (let i = 0; i < translationElements.length; i++) {
+  translationElements[i].textContent = translation.ru[i];
+}
 
 toggleButton.addEventListener("click", () => {
   if (dropdownList.classList.contains("open")) {
@@ -164,12 +147,12 @@ toggleButton.addEventListener("click", () => {
 changeLanguage.addEventListener("click", () => {
   if (changeLanguage.classList.contains("EN")) {
     for (let i = 0; i < translationElements.length; i++) {
-      translationElements[i].textContent = translation.en[i];
+      translationElements[i].textContent = translation.ru[i];
     }
     changeLanguage.classList.remove("EN");
   } else {
     for (let i = 0; i < translationElements.length; i++) {
-      translationElements[i].textContent = translation.ru[i];
+      translationElements[i].textContent = translation.en[i];
     }
     changeLanguage.classList.add("EN");
   }
