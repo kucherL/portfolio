@@ -217,6 +217,23 @@ html {
       }
     }
   }
+
+  .resume {
+    display: block;
+    background-color: $accent-color;
+    color: $background-additional-color;
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 3px;
+    margin: 1.5rem auto 1rem auto;
+    padding: 0.2rem 0.5rem;
+    width: fit-content;
+
+    &:hover {
+      background-color: $background-additional-color;
+      color: $accent-color;
+    }
+  }
 }
 
 #technologies {
@@ -357,6 +374,24 @@ html {
           width: 3rem;
         }
       }
+    }
+  }
+
+  .resume {
+    text-decoration: none;
+    display: block;
+    background-color: $accent-color;
+    color: $background-color;
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 3px;
+    margin: 1rem auto;
+    padding: 0.2rem 0.5rem;
+    width: fit-content;
+
+    &:hover {
+      background-color: $background-color;
+      color: $accent-color;
     }
   }
 }

@@ -1,12 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -22,32 +14,13 @@ html {
 .header {
   width: 100%;
   height: 100vh;
-  background: -webkit-gradient(
-      linear,
-      left bottom,
-      left top,
-      color-stop(100%, rgba(250, 237, 0, 0.3)),
-      to(transparent)
-    ),
-    url("./assets/background__markus-spiske-unsplash.jpg") bottom/cover
-      no-repeat border-box;
-  background: -o-linear-gradient(
-      bottom,
-      rgba(250, 237, 0, 0.3) 100%,
-      transparent
-    ),
-    url("./assets/background__markus-spiske-unsplash.jpg") bottom/cover
-      no-repeat border-box;
-  background: linear-gradient(to top, rgba(250, 237, 0, 0.3) 100%, transparent),
-    url("./assets/background__markus-spiske-unsplash.jpg") bottom/cover
-      no-repeat border-box;
+  background: linear-gradient(to top, rgba(250, 237, 0, 0.3) 100%, transparent), url("./assets/background__markus-spiske-unsplash.jpg") bottom/cover no-repeat border-box;
   position: relative;
 }
 .header .header__background-image {
   width: 100%;
   height: 100vh;
   background-color: rgba(23, 23, 23, 0.9);
-  -webkit-clip-path: polygon(0 100%, 0 0, 100% 54%, 100% 100%);
   clip-path: polygon(0 100%, 0 0, 100% 54%, 100% 100%);
   z-index: 1;
 }
@@ -78,15 +51,11 @@ html {
   margin: 1px;
   width: 30px;
   background: #faed00;
-  -webkit-transition: 0.4s ease;
-  -o-transition: 0.4s ease;
   transition: 0.4s ease;
 }
 .header .round span:first-child {
   display: block;
   position: absolute;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   left: 25%;
   bottom: 35%;
@@ -94,8 +63,6 @@ html {
 .header .round span:nth-child(2) {
   display: block;
   position: absolute;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
   left: 45%;
   bottom: 35%;
@@ -103,8 +70,6 @@ html {
 .header .round span:nth-child(3) {
   display: block;
   position: absolute;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   left: 25%;
   bottom: 54%;
@@ -112,30 +77,20 @@ html {
 .header .round span:nth-child(4) {
   display: block;
   position: absolute;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
   left: 45%;
   bottom: 54%;
 }
 .header .round:hover span:nth-child(1) {
-  -webkit-transform: rotate(-135deg);
-  -ms-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
 .header .round:hover span:nth-child(2) {
-  -webkit-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
   transform: rotate(135deg);
 }
 .header .round:hover span:nth-child(3) {
-  -webkit-transform: rotate(225deg);
-  -ms-transform: rotate(225deg);
   transform: rotate(225deg);
 }
 .header .round:hover span:nth-child(4) {
-  -webkit-transform: rotate(-225deg);
-  -ms-transform: rotate(-225deg);
   transform: rotate(-225deg);
 }
 
@@ -164,14 +119,8 @@ html {
 }
 .nav-bar .nav-bar__items {
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
   list-style: none;
 }
@@ -218,17 +167,9 @@ html {
   color: #faed00;
 }
 #about .about__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 #about .about__container .photo-border {
@@ -245,6 +186,21 @@ html {
   top: 1rem;
   left: 1rem;
 }
+#about .resume {
+  display: block;
+  background-color: #faed00;
+  color: #353535;
+  font-family: inherit;
+  font-weight: bold;
+  border-radius: 3px;
+  margin: 1.5rem auto 1rem auto;
+  padding: 0.2rem 0.5rem;
+  width: fit-content;
+}
+#about .resume:hover {
+  background-color: #353535;
+  color: #faed00;
+}
 
 #technologies {
   background-color: #171717;
@@ -256,14 +212,8 @@ html {
   width: 14rem;
 }
 #technologies .technologies__list .technologies__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   margin: 1rem;
 }
@@ -278,12 +228,9 @@ html {
 }
 #certificates .certificates__gallery {
   margin: 0 1rem;
-  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fill, 12rem);
   grid-gap: 1rem;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 #certificates .certificates__gallery--item {
@@ -308,23 +255,11 @@ html {
   position: relative;
 }
 #certificates .certificates__gallery--item:hover > a > figure > figcaption {
-  -webkit-transform: translateY(-145px);
-  -ms-transform: translateY(-145px);
   transform: translateY(-145px);
-  -webkit-transition: 300ms;
-  -o-transition: 300ms;
   transition: 300ms;
 }
-#certificates
-  .certificates__gallery--item:not(:hover)
-  > a
-  > figure
-  > figcaption {
-  -webkit-transform: translateY(0px);
-  -ms-transform: translateY(0px);
+#certificates .certificates__gallery--item:not(:hover) > a > figure > figcaption {
   transform: translateY(0px);
-  -webkit-transition: 300ms;
-  -o-transition: 300ms;
   transition: 300ms;
 }
 
@@ -351,10 +286,7 @@ html {
 }
 #projects .project .project__links {
   margin: 2rem auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 #projects .project .project__links a {
@@ -372,13 +304,8 @@ html {
 }
 #contacts .contacts__links {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 #contacts .contacts__links .contact__link {
@@ -393,6 +320,22 @@ html {
   height: 3rem;
   width: 3rem;
 }
+#contacts .resume {
+  text-decoration: none;
+  display: block;
+  background-color: #faed00;
+  color: #171717;
+  font-family: inherit;
+  font-weight: bold;
+  border-radius: 3px;
+  margin: 1rem auto;
+  padding: 0.2rem 0.5rem;
+  width: fit-content;
+}
+#contacts .resume:hover {
+  background-color: #171717;
+  color: #faed00;
+}
 
 .footer {
   background-color: #faed00;
@@ -403,29 +346,12 @@ html {
   color: #171717;
 }
 
-@-webkit-keyframes appearance {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes appearance {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
-  }
-}
-@-webkit-keyframes disappearance {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
   }
 }
 @keyframes disappearance {
@@ -436,28 +362,12 @@ html {
     opacity: 0;
   }
 }
-@-webkit-keyframes dropdown {
-  from {
-    height: 3rem;
-  }
-  to {
-    height: 12rem;
-  }
-}
 @keyframes dropdown {
   from {
     height: 3rem;
   }
   to {
     height: 12rem;
-  }
-}
-@-webkit-keyframes dropup {
-  from {
-    height: 12rem;
-  }
-  to {
-    height: 3rem;
   }
 }
 @keyframes dropup {
@@ -473,19 +383,11 @@ html {
     display: none;
   }
   .nav-bar .nav-bar__items {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
   }
 
   #about .about__container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
   }
   #about .about__text-section {
@@ -493,20 +395,12 @@ html {
   }
 
   #technologies .technologies__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
   #technologies .technologies__list .technologies__item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
   }
   #technologies .technologies__list .technologies__item img {
@@ -514,13 +408,8 @@ html {
   }
 
   #projects .project {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin-bottom: 3rem;
     margin-left: 2rem;
@@ -531,31 +420,17 @@ html {
     margin-right: 2rem;
   }
   #projects .project .project__container:hover {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
     transform: scale(1.05);
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
     transition: 0.5s;
   }
   #projects .project .project__container:not(:hover) {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
     transition: 0.5s;
   }
   #projects .project .project__links {
     height: 10rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 }
@@ -564,12 +439,7 @@ html {
     margin-bottom: 2rem;
   }
   #projects .project .project__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
     width: 80%;
   }
@@ -578,8 +448,6 @@ html {
     height: 100%;
     margin-bottom: 0;
     margin-right: 1rem;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
     align-self: center;
   }
   #projects .project .project__links {

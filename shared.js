@@ -28,6 +28,7 @@ const translation = {
     `В свободное время, в основном, практикуюсь в
     написании кода (работая над каким-то из своих проектов или решая задачи на `,
     `), либо же я занимаюсь спортом или играю в видеоигры.`,
+    `Скачать резюме`,
     "Стек технологий",
     "Сертификаты",
     `Сертификат о прохождении курса FreeCodeCamp. Адаптивная верстка.`,
@@ -55,7 +56,7 @@ const translation = {
     Пользователи могут перейти на соответствующую вкладку, и
     фильтровать игры по жанрам, платформам, рейтингу или
     популярности, или же просто искать по названию. Наверху главной
-    страницы из 100 наиболее популярных игр загружается информация по одной, случайно выбранной. 
+    страницы из 50 наиболее популярных игр загружается информация по одной, случайно выбранной. 
     Ниже расположен список игр с
     высоким рейтингом (в будущем я планирую написать алгоритм,
     который отображал бы игры, подходящие по интересам пользователя).
@@ -71,6 +72,7 @@ const translation = {
     загрузки приложения, прошу прощения за доставленные неудобства.`,
     `При создании использовались React, Redux, и Firebase.`,
     "Контакты",
+    `Скачать резюме`,
     "Елизавета Кучерова",
   ],
   en: [
@@ -91,6 +93,7 @@ const translation = {
     `In the nearest future, I plan to study deeper Node.js, for building backend.`,
     `In my free time, you can find me practice at coding (I can work on some of my pet-projects or take the challenge at `,
     `), or do sport, or play video games.`,
+    `Download resume`,
     "Technologies",
     "Certificates",
     "FreeCodeCamp сourse сertificate. Responsive web design.",
@@ -115,7 +118,7 @@ const translation = {
     `Project still in work.`,
     `GameSearch is a web application, made for searching for different games. Users can filter games by genres, 
     platforms, rating, or popularity, or just filter by title. On top of the main
-    page, of the 100 most popular games are loaded with information on one randomly selected. 
+    page, of the 50 most popular games are loaded with information on one randomly selected. 
     On the bottom - a list of games, with high rating (In future I plan to write 
     an algorithm, which would recommend users games, according to their taste). 
     When users click on a game, they go to a page containing detailed information about it. When users signs up, 
@@ -126,6 +129,7 @@ const translation = {
     This leads to long page loads, I'm sorry for the inconveniences.`,
     `React, Redux, and Firebase used for building this app.`,
     "Contacts",
+    `Download resume`,
     "Elizaveta Kucherova",
   ],
 };
