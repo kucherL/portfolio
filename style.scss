@@ -10,6 +10,7 @@ html {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: $text-color;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -30,7 +31,7 @@ html {
 
   h1 {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 20%;
   }
 
@@ -40,76 +41,73 @@ html {
     left: 20%;
   }
 
-  .center-con {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-  }
-
   .round {
+    display: block;
     position: relative;
-    border: 3px solid #fff;
+    border: 3px solid $accent-color;
     width: 100px;
     height: 100px;
     border-radius: 100%;
-  }
-
-  span {
-    z-index: 999;
-    height: 3px;
-    margin: 1px;
-    width: 30px;
-    background: #fff;
-    transition: 0.4s ease;
-  }
-
-  span:first-child {
-    display: block;
-    position: absolute;
-    transform: rotate(45deg);
-    left: 25%;
-    bottom: 35%;
-  }
-
-  span:nth-child(2) {
-    display: block;
-    position: absolute;
-    transform: rotate(-45deg);
     left: 45%;
-    bottom: 35%;
-  }
+    bottom: 9rem;
+    cursor: pointer;
 
-  span:nth-child(3) {
-    display: block;
-    position: absolute;
-    transform: rotate(45deg);
-    left: 25%;
-    bottom: 54%;
-  }
+    span {
+      z-index: 999;
+      height: 3px;
+      margin: 1px;
+      width: 30px;
+      background: $accent-color;
+      transition: 0.4s ease;
+    }
 
-  span:nth-child(4) {
-    display: block;
-    position: absolute;
-    transform: rotate(-45deg);
-    left: 45%;
-    bottom: 54%;
-  }
+    span:first-child {
+      display: block;
+      position: absolute;
+      transform: rotate(45deg);
+      left: 25%;
+      bottom: 35%;
+    }
 
-  .round:hover span:nth-child(1) {
-    transform: rotate(-135deg);
-  }
+    span:nth-child(2) {
+      display: block;
+      position: absolute;
+      transform: rotate(-45deg);
+      left: 45%;
+      bottom: 35%;
+    }
 
-  .round:hover span:nth-child(2) {
-    transform: rotate(135deg);
-  }
+    span:nth-child(3) {
+      display: block;
+      position: absolute;
+      transform: rotate(45deg);
+      left: 25%;
+      bottom: 54%;
+    }
 
-  .round:hover span:nth-child(3) {
-    transform: rotate(225deg);
-  }
+    span:nth-child(4) {
+      display: block;
+      position: absolute;
+      transform: rotate(-45deg);
+      left: 45%;
+      bottom: 54%;
+    }
 
-  .round:hover span:nth-child(4) {
-    transform: rotate(-225deg);
+    &:hover span:nth-child(1) {
+      transform: rotate(-135deg);
+    }
+
+    &:hover span:nth-child(2) {
+      transform: rotate(135deg);
+    }
+
+    &:hover span:nth-child(3) {
+      transform: rotate(225deg);
+    }
+
+    &:hover span:nth-child(4) {
+      transform: rotate(-225deg);
+    }
   }
 }
 
@@ -129,7 +127,7 @@ html {
     outline: none;
     margin-left: 1rem;
 
-    .toggle-button__bar {
+    &__bar {
       width: 100%;
       height: 0.3rem;
       background-color: $background-color;
@@ -280,12 +278,12 @@ html {
       }
     }
 
-    &--item:hover > figure > a > figcaption {
+    &--item:hover > a > figure > figcaption {
       transform: translateY(-145px);
       transition: 300ms;
     }
 
-    &--item:not(:hover) > figure > a > figcaption {
+    &--item:not(:hover) > a > figure > figcaption {
       transform: translateY(0px);
       transition: 300ms;
     }

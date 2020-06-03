@@ -50,6 +50,7 @@ const translation = {
     Приложение создано на базе React, авторизация и хранение данных осуществляются с помощью Firebase.
     Также, при создании использовались Sass и библиотека React
     Router.`,
+    `Проект в работе.`,
     `GameSearch - это приложение, созданное для поиска игр. 
     Пользователи могут перейти на соответствующую вкладку, и
     фильтровать игры по жанрам, платформам, рейтингу или
@@ -81,13 +82,13 @@ const translation = {
     "Contacts",
     "Изменить язык",
     "About me",
-    `Hi, I'm a self-taught front-end developer from Moscow. Interest in technology, the desire 
+    `Hi, I'm a self-taught frontend developer from Moscow. Interest in technology, the desire 
     to create and the need to make a website in the past led me to the world of web programming. 
     The path into the web began in 2018 when I decided to start studying at Mail.ru university, `,
     `Soon after that, I began to work at some of my projects.`,
     `I create websites using adaptive web-design techniques and clean JavaScript code, written with ES6 standard. 
     Also, I like to work with React.`,
-    `In the nearest future, I plan to study deeper Node.js, for building back-end.`,
+    `In the nearest future, I plan to study deeper Node.js, for building backend.`,
     `In my free time, you can find me practice at coding (I can work on some of my pet-projects or take the challenge at `,
     `), or do sport, or play video games.`,
     "Technologies",
@@ -106,18 +107,23 @@ const translation = {
     `GeekBrains test сertificate. HTML&CSS. Hard level.`,
     `GeekBrains test сertificate. JavaScript basic.`,
     "Projects",
-    `It's a fully responsive web application made for educational purposes. The primary technologies involved in this project include HTML5, CSS3, Sass, and vanilla js.`,
-    `ToDo List is a web application similar to any todo list. Users can create tasks, delete them, and mark completed. Also, users can check the completed tasks. The app was created using React.
+    `It's a fully responsive web application made for educational purposes. 
+    The primary technologies involved in this project include HTML5, CSS3, Sass, and vanilla js.`,
+    `ToDo List is a web application similar to any todo list. Users can create tasks, delete them, and mark completed. 
+    Also, users can check the completed tasks. The app was created using React.
     Authorization and storage data was made with Firebase. For making the application was also used Sass and React Router library.`,
+    `Project still in work.`,
     `GameSearch is a web application, made for searching for different games. Users can filter games by genres, 
     platforms, rating, or popularity, or just filter by title. On top of the main
-      page, of the 100 most popular games are loaded with information on one randomly selected. 
+    page, of the 100 most popular games are loaded with information on one randomly selected. 
     On the bottom - a list of games, with high rating (In future I plan to write 
-      an algorithm, which would recommend users games, according to their taste). 
-      When users click on a game, they go to a page containing detailed information about it. When users signs up, new functions are opening for him, such as - 
-      rating games and adding them to folders, which can also be created independently. On the profile page, the 
-      user can also change the photo and name.`,
-    `This application made with IGDB API. Also, I was faced with the need to add cors-proxy on Heroku, for cors-policy. This leads to long page loads, I'm sorry for the inconveniences.`,
+    an algorithm, which would recommend users games, according to their taste). 
+    When users click on a game, they go to a page containing detailed information about it. When users signs up, 
+    new functions are opening for him, such as - 
+    rating games and adding them to folders, which can also be created independently. On the profile page, the 
+    user can also change the photo and name.`,
+    `This application made with IGDB API. Also, I was faced with the need to add cors-proxy on Heroku, for cors-policy. 
+    This leads to long page loads, I'm sorry for the inconveniences.`,
     `React, Redux, and Firebase used for building this app.`,
     "Contacts",
     "Elizaveta Kucherova",
@@ -128,7 +134,7 @@ for (let i = 0; i < translationElements.length; i++) {
   translationElements[i].textContent = translation.ru[i];
 }
 
-toggleButton.addEventListener("click", () => {
+toggleButton.addEventListener("click", (e) => {
   if (dropdownList.classList.contains("open")) {
     dropdownList.style.animation =
       "disappearance 0.2s cubic-bezier(0.2, 0.48, 0.76, 0.29)";
@@ -170,7 +176,7 @@ const throttleScroll = (e) => {
   isScrolling = true;
 };
 
-const scrolling = (e) => {
+const scrolling = () => {
   if (isElementAtTop(navBar) && dropdownList.classList.contains("open")) {
     about.setAttribute("style", "margin-top:12rem");
     navBar.setAttribute("style", "position:fixed; top:0; width:100%");
