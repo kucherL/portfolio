@@ -5,6 +5,7 @@ let header = document.querySelector(".header");
 let about = document.getElementById("about");
 let changeLanguage = document.getElementById("change-language");
 let translationElements = document.getElementsByClassName("translation");
+let navItems = document.getElementsByClassName("nav-bar__item");
 
 const translation = {
   ru: [
@@ -138,21 +139,28 @@ for (let i = 0; i < translationElements.length; i++) {
   translationElements[i].textContent = translation.ru[i];
 }
 
-toggleButton.addEventListener("click", (e) => {
+toggleButton.addEventListener("click", () => {
   if (dropdownList.classList.contains("open")) {
-    dropdownList.style.animation =
-      "disappearance 0.2s cubic-bezier(0.2, 0.48, 0.76, 0.29)";
-    navBar.style.animation = "dropup 0.2s ease-out";
+    navBar.style.animation = "dropup 0.1s linear";
     dropdownList.removeAttribute("style", "display:flex");
     dropdownList.classList.remove("open");
   } else {
-    navBar.style.animation = "dropdown 0.2s ease-out";
+    navBar.style.animation = "dropdown 0.1s linear";
     dropdownList.setAttribute("style", "display:flex");
-    dropdownList.style.animation =
-      "appearance 0.2s cubic-bezier(0.2, 0.48, 0.76, 0.29)";
+    dropdownList.style.animation = "appearance 0.3s linear";
     dropdownList.classList.add("open");
   }
 });
+
+for (let item of navItems) {
+  item.addEventListener("click", () => {
+    if (dropdownList.classList.contains("open")) {
+      navBar.style.animation = "dropup 0.1s linear";
+      dropdownList.removeAttribute("style", "display:flex");
+      dropdownList.classList.remove("open");
+    }
+  });
+}
 
 changeLanguage.addEventListener("click", () => {
   if (changeLanguage.classList.contains("EN")) {
