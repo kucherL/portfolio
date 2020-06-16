@@ -135,12 +135,12 @@ const translation = {
   ],
 };
 
-// Fetching russian translation at page loading
+// Fetches russian translation at page loading
 for (let i = 0; i < translationElements.length; i++) {
   translationElements[i].textContent = translation.ru[i];
 }
 
-// Changing the translation on click
+// Changes language on click
 changeLanguage.addEventListener("click", () => {
   if (changeLanguage.classList.contains("EN")) {
     for (let i = 0; i < translationElements.length; i++) {
@@ -155,10 +155,10 @@ changeLanguage.addEventListener("click", () => {
   }
 });
 
-// Opening and closing navigation menu on click
-toggleButton.addEventListener("click", () => {
+// Closes and opens the navigation menu
+const closeAndOpenMenu = () => {
   if (dropdownList.classList.contains("open")) {
-    navBar.style.animation = "dropup 0.1s linear";
+    navBar.style.animation = "raise 0.1s linear";
     dropdownList.removeAttribute("style", "display:flex");
     dropdownList.classList.remove("open");
   } else {
@@ -167,22 +167,23 @@ toggleButton.addEventListener("click", () => {
     dropdownList.style.animation = "appearance 0.3s linear";
     dropdownList.classList.add("open");
   }
+};
+
+// Opens and closes the navigation menu with a click on the toggle button
+toggleButton.addEventListener("click", () => {
+  closeAndOpenMenu();
 });
 
-// Closing navigation menu with a click on the navigation item
+// Closes the navigation menu with a click on the navigation item
 for (let item of navItems) {
   item.addEventListener("click", () => {
-    if (dropdownList.classList.contains("open")) {
-      navBar.style.animation = "dropup 0.1s linear";
-      dropdownList.removeAttribute("style", "display:flex");
-      dropdownList.classList.remove("open");
-    }
+    closeAndOpenMenu();
   });
 }
 
 let isScrolling = false;
 
-// Checking scrolling
+// Checks scrolling
 const throttleScroll = (e) => {
   if (isScrolling === false) {
     window.requestAnimationFrame(() => {
@@ -193,7 +194,21 @@ const throttleScroll = (e) => {
   isScrolling = true;
 };
 
-// Sticking navigation menu, if it's on top of the viewport, and unsticking if not
+// Checks if the element is on top of the viewport
+const isElementAtTop = (el) => {
+  let elBoundary = el.getBoundingClientRect();
+  let top = elBoundary.top;
+  return top <= 0;
+};
+
+// Checks if the element is at bottom of the viewport
+const isElementAtBottom = (el) => {
+  let elBoundary = el.getBoundingClientRect();
+  let bottom = elBoundary.bottom;
+  return bottom >= 0;
+};
+
+// Sticks navigation menu, if it's on top of the viewport, and unsticks if not
 const scrolling = () => {
   if (isElementAtTop(navBar) && dropdownList.classList.contains("open")) {
     about.setAttribute("style", "margin-top:12rem");
@@ -216,20 +231,6 @@ const scrolling = () => {
     about.removeAttribute("style", "margin-top:2.5rem");
     navBar.removeAttribute("style", "position:fixed; top:0; width:100%");
   }
-};
-
-// Checking if the element is on top of the viewport
-const isElementAtTop = (el) => {
-  let elBoundary = el.getBoundingClientRect();
-  let top = elBoundary.top;
-  return top <= 0;
-};
-
-// Checking if the element is at bottom of the viewport
-const isElementAtBottom = (el) => {
-  let elBoundary = el.getBoundingClientRect();
-  let bottom = elBoundary.bottom;
-  return bottom >= 0;
 };
 
 window.addEventListener("scroll", throttleScroll, false);

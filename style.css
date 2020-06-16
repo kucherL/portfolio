@@ -17,7 +17,7 @@ html {
   background: linear-gradient(to top, rgba(250, 237, 0, 0.3) 100%, transparent), url("./assets/background__markus-spiske-unsplash.jpg") bottom/cover no-repeat border-box;
   position: relative;
 }
-.header .header__background-image {
+.header__background-image {
   width: 100%;
   height: 100vh;
   background-color: rgba(23, 23, 23, 0.9);
@@ -120,28 +120,28 @@ html {
   display: block;
   margin: 0.6rem 0;
 }
-.nav-bar .nav-bar__items {
+.nav-bar__items {
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   list-style: none;
 }
-.nav-bar .nav-bar__items .nav-bar__item {
+.nav-bar__items .nav-bar__item {
   padding: 0.5rem 0;
 }
-.nav-bar .nav-bar__items .nav-bar__item a {
+.nav-bar__items .nav-bar__item a {
   text-decoration: none;
 }
-.nav-bar .nav-bar__items .nav-bar__item a p {
+.nav-bar__items .nav-bar__item a p {
   font-family: inherit;
   color: #171717;
 }
-.nav-bar .nav-bar__items .nav-bar__item-button {
+.nav-bar__items .nav-bar__item-button {
   padding: 0.5rem 0.3rem;
   background-color: #353535;
 }
-.nav-bar .nav-bar__items .nav-bar__item-button button {
+.nav-bar__items .nav-bar__item-button button {
   border: none;
   background-color: transparent;
   font-family: inherit;
@@ -150,7 +150,7 @@ html {
   cursor: pointer;
   color: #ababab;
 }
-.nav-bar .nav-bar__items .nav-bar__item-button:hover button {
+.nav-bar__items .nav-bar__item-button:hover button {
   color: #faed00;
 }
 
@@ -270,33 +270,33 @@ html {
   background-color: #171717;
   padding: 1rem 1rem;
 }
-#projects .project .project__container {
+#projects .project__container {
   display: block;
   border: 1.5px solid #faed00;
   padding: 0.5rem 0.5rem;
   text-decoration: none;
   color: inherit;
 }
-#projects .project .project__container .project__screenshot {
+#projects .project__screenshot {
   width: 100%;
   height: auto;
 }
-#projects .project .project__container .project__title {
+#projects .project__title {
   margin: 1rem auto;
 }
-#projects .project .project__container .project__description {
+#projects .project__description {
   margin-bottom: 1rem;
 }
-#projects .project .project__links {
+#projects .project__links {
   margin: 2rem auto;
   display: flex;
   justify-content: space-around;
 }
-#projects .project .project__links a {
+#projects .project__links a {
   text-decoration: none;
   cursor: pointer;
 }
-#projects .project .project__links a img {
+#projects .project__links a img {
   height: 3rem;
   width: auto;
 }
@@ -365,7 +365,7 @@ html {
     height: 12rem;
   }
 }
-@keyframes dropup {
+@keyframes raise {
   from {
     height: 12rem;
   }
@@ -377,7 +377,7 @@ html {
   .nav-bar .toggle-button {
     display: none;
   }
-  .nav-bar .nav-bar__items {
+  .nav-bar__items {
     display: flex;
     flex-direction: row;
   }
@@ -409,20 +409,20 @@ html {
     margin-bottom: 3rem;
     margin-left: 2rem;
   }
-  #projects .project .project__container {
+  #projects .project__container {
     width: 30rem;
     height: auto;
     margin-right: 2rem;
   }
-  #projects .project .project__container:hover {
+  #projects .project__container:hover {
     transform: scale(1.05);
     transition: 0.5s;
   }
-  #projects .project .project__container:not(:hover) {
+  #projects .project__container:not(:hover) {
     transform: scale(1);
     transition: 0.5s;
   }
-  #projects .project .project__links {
+  #projects .project__links {
     height: 10rem;
     flex-direction: column;
     align-items: center;
@@ -433,19 +433,19 @@ html {
   #projects .project {
     margin-bottom: 2rem;
   }
-  #projects .project .project__container {
+  #projects .project__container {
     display: flex;
     flex-direction: row;
     width: 80%;
   }
-  #projects .project .project__container .project__screenshot {
+  #projects .project__screenshot {
     width: 60%;
     height: 100%;
     margin-bottom: 0;
     margin-right: 1rem;
     align-self: center;
   }
-  #projects .project .project__links {
+  #projects .project__links {
     margin: 0 auto;
   }
 }
