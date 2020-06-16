@@ -177,7 +177,11 @@ toggleButton.addEventListener("click", () => {
 // Closes the navigation menu with a click on the navigation item
 for (let item of navItems) {
   item.addEventListener("click", () => {
-    closeAndOpenMenu();
+    if (dropdownList.classList.contains("open")) {
+      navBar.style.animation = "raise 0.1s linear";
+      dropdownList.removeAttribute("style", "display:flex");
+      dropdownList.classList.remove("open");
+    }
   });
 }
 
