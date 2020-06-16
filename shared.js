@@ -1,11 +1,11 @@
-let dropdownList = document.querySelector(".nav-bar__items");
-let toggleButton = document.querySelector(".toggle-button");
-let navBar = document.querySelector(".nav-bar");
-let header = document.querySelector(".header");
-let about = document.getElementById("about");
-let changeLanguage = document.getElementById("change-language");
-let translationElements = document.getElementsByClassName("translation");
-let navItems = document.getElementsByClassName("nav-bar__item");
+const about = document.getElementById("about");
+const dropdownList = document.querySelector(".nav-bar__items");
+const toggleButton = document.querySelector(".toggle-button");
+const navBar = document.querySelector(".nav-bar");
+const header = document.querySelector(".header");
+const changeLanguage = document.querySelector(".change-language");
+const translationElements = document.querySelectorAll(".translation");
+const navItems = document.querySelectorAll(".nav-bar__item");
 
 const translation = {
   ru: [
@@ -135,33 +135,12 @@ const translation = {
   ],
 };
 
+// Fetching russian translation at page loading
 for (let i = 0; i < translationElements.length; i++) {
   translationElements[i].textContent = translation.ru[i];
 }
 
-toggleButton.addEventListener("click", () => {
-  if (dropdownList.classList.contains("open")) {
-    navBar.style.animation = "dropup 0.1s linear";
-    dropdownList.removeAttribute("style", "display:flex");
-    dropdownList.classList.remove("open");
-  } else {
-    navBar.style.animation = "dropdown 0.1s linear";
-    dropdownList.setAttribute("style", "display:flex");
-    dropdownList.style.animation = "appearance 0.3s linear";
-    dropdownList.classList.add("open");
-  }
-});
-
-for (let item of navItems) {
-  item.addEventListener("click", () => {
-    if (dropdownList.classList.contains("open")) {
-      navBar.style.animation = "dropup 0.1s linear";
-      dropdownList.removeAttribute("style", "display:flex");
-      dropdownList.classList.remove("open");
-    }
-  });
-}
-
+// Changing the translation on click
 changeLanguage.addEventListener("click", () => {
   if (changeLanguage.classList.contains("EN")) {
     for (let i = 0; i < translationElements.length; i++) {
@@ -176,8 +155,34 @@ changeLanguage.addEventListener("click", () => {
   }
 });
 
+// Opening and closing navigation menu on click
+toggleButton.addEventListener("click", () => {
+  if (dropdownList.classList.contains("open")) {
+    navBar.style.animation = "dropup 0.1s linear";
+    dropdownList.removeAttribute("style", "display:flex");
+    dropdownList.classList.remove("open");
+  } else {
+    navBar.style.animation = "dropdown 0.1s linear";
+    dropdownList.setAttribute("style", "display:flex");
+    dropdownList.style.animation = "appearance 0.3s linear";
+    dropdownList.classList.add("open");
+  }
+});
+
+// Closing navigation menu with a click on the navigation item
+for (let item of navItems) {
+  item.addEventListener("click", () => {
+    if (dropdownList.classList.contains("open")) {
+      navBar.style.animation = "dropup 0.1s linear";
+      dropdownList.removeAttribute("style", "display:flex");
+      dropdownList.classList.remove("open");
+    }
+  });
+}
+
 let isScrolling = false;
 
+// Checking scrolling
 const throttleScroll = (e) => {
   if (isScrolling === false) {
     window.requestAnimationFrame(() => {
@@ -188,6 +193,7 @@ const throttleScroll = (e) => {
   isScrolling = true;
 };
 
+// Sticking navigation menu, if it's on top of the viewport, and unsticking if not
 const scrolling = () => {
   if (isElementAtTop(navBar) && dropdownList.classList.contains("open")) {
     about.setAttribute("style", "margin-top:12rem");
@@ -212,12 +218,14 @@ const scrolling = () => {
   }
 };
 
+// Checking if the element is on top of the viewport
 const isElementAtTop = (el) => {
   let elBoundary = el.getBoundingClientRect();
   let top = elBoundary.top;
   return top <= 0;
 };
 
+// Checking if the element is at bottom of the viewport
 const isElementAtBottom = (el) => {
   let elBoundary = el.getBoundingClientRect();
   let bottom = elBoundary.bottom;
